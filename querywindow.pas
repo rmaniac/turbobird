@@ -1655,8 +1655,8 @@ begin
     OnCommit:= nil;
   end;
   FIBConnection.Close;
-  OutputTabsList.Free;
   RemovePreviousResultTabs;
+  OutputTabsList.Free;
   CloseAction:= caFree;
 end;
 
